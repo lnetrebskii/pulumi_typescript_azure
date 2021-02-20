@@ -1,6 +1,7 @@
 {
     "name": "client-portal-sync",
     "devDependencies": {
+        "@azure/functions": "^1.2.2",
         "@types/node": "^10.0.0"
     },
     "dependencies": {

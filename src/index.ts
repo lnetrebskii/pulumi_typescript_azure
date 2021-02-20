@@ -1,5 +1,6 @@
 import * as pulumi from "@pulumi/pulumi";
 import * as azure from "@pulumi/azure";
+import { AzureFunction, Context } from "@azure/functions"
 
 // Create an Azure Resource Group
 const resourceGroup = new azure.core.ResourceGroup(`stella-to-client-portal-integration-${pulumi.getStack()}`);
@@ -32,7 +33,7 @@ const funcAppInsights = new azure.appinsights.Insights(`entitiesPersister-${pulu
 export const instrumentationKey = funcAppInsights.instrumentationKey;
 export const appId = funcAppInsights.appId;
 
-const handler = function(context: any, crmContext: any) 
+const handler = function(context: Context, crmContext: any) 
 {
 
 }
