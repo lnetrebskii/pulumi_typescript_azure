@@ -1,0 +1,3 @@
+name: client-portal-sync
+runtime: nodejs
+description: Services that sync Stella and client portal databases
